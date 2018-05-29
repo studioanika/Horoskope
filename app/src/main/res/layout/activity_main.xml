@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mobiapp.newhoroscope.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="visible"></FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/space_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/news.search_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/news.rel"
+                android:layout_width="250dp"
+                android:layout_height="1px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/news.recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/news.progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/space"
+        android:layout_marginBottom="-28dp"
+        app:srcCompat="@drawable/shadow" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/space"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-54dp"
+        app:srcCompat="@drawable/ecler" />
+
+        <com.example.mobiapp.newhoroscope.spacenavigationview.SpaceNavigationView
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:elevation="24dp"
+            app:active_item_color="@color/colorPrimary"
+            app:centre_part_linear="true"
+            app:layout_behavior="com.example.mobiapp.newhoroscope.spacenavigationview.SpaceNavigationViewBehavior">
+
+        </com.example.mobiapp.newhoroscope.spacenavigationview.SpaceNavigationView>
+
+</RelativeLayout>

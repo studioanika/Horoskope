@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Гороскоп 2018</string>
+    <string name="title_activity_horo">Гороскоп</string>
+    <string name="title_activity_portret">Звездный портрет</string>
+    <string name="title_activity_taina">Тайна имени</string>
+    <string name="title_activity_sovmestimost_n">Совместимость имен</string>
+    <string name="title_activity_sovmestimost_z">Совместимость знаков</string>
+    <string name="title_activity_description"></string>
+
+    <string-array name="znaklist">
+        <item>Овен</item>
+        <item>Телец</item>
+        <item>Близнецы</item>
+        <item>Рак</item>
+        <item>Лев</item>
+        <item>Дева</item>
+        <item>Весы</item>
+        <item>Скорпион</item>
+        <item>Стрелец</item>
+        <item>Козерог</item>
+        <item>Водолей</item>
+        <item>Рыбы</item>
+    </string-array>
+    <string-array name="znaklist1">
+        <item>Овен</item>
+        <item>Телец</item>
+        <item>Близнецы</item>
+        <item>Рак</item>
+        <item>Лев</item>
+        <item>Дева</item>
+        <item>Весы</item>
+        <item>Скорпион</item>
+        <item>Стрелец</item>
+        <item>Козерог</item>
+        <item>Водолей</item>
+        <item>Рыбы</item>
+    </string-array>
+    <string name="text_share">Установи Гороскоп себе на телефон! Узнай гороскоп на каждый день! Тайны имени и даты Вашего рождения и многое другое! https://play.google.com/store/apps/details?id=by.anikamobiappstudio.horoscope</string>
+</resources>
